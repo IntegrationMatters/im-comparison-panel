@@ -4,12 +4,9 @@ Hash: SHA512
 
 {
   "manifestVersion": "2.0.0",
-  "signatureType": "private",
+  "signatureType": "community",
   "signedByOrg": "skowalski",
   "signedByOrgName": "im",
-  "rootUrls": [
-    "http://localhost/"
-  ],
   "plugin": "im-comparison-panel",
   "version": "1.0.0",
   "time": 1624017208586,
