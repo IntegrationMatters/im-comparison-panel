@@ -1,0 +1,117 @@
+.im-comparison-panel {
+  position: relative;
+  min-height: 100px;
+  min-width: 350px;
+  font-family: 'system-ui', sans-serif;
+
+  &::after {
+    content: '';
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+  }
+
+  .panel-left,
+  .panel-right {
+    width: 50%;
+    float: left;
+    height: 100%;
+    position: relative;
+  }
+
+  .header {
+    font-size: 20px;
+    margin-left: calc(25% + 83px);
+    width: 100%;
+  }
+
+  .main-text {
+    font-size: 60px;
+    line-height: 60px;
+
+    .icon {
+      color: gray;
+      display: inline-block;
+      position: absolute;
+      left: 25%;
+      top: 25px;
+
+      &.success {
+        color: green;
+      }
+
+      &.warning {
+        color: darkgoldenrod;
+      }
+
+      &.error {
+        color: darkred;
+      }
+
+      &.timeout {
+        color: #ff5722;
+      }
+    }
+
+    .percentage {
+      padding: 0 20px;
+      display: inline-block;
+      position: absolute;
+      left: calc(25% + 60px);
+      top: 25px;
+    }
+  }
+
+  .comparison {
+    font-weight: 100;
+
+    .compare-values {
+      position: absolute;
+      left: calc(25% + 30px);
+
+      &:first-child {
+        top: calc(31% + 15px);
+      }
+
+      &:last-child {
+        top: calc(61% + 15px);
+      }
+
+      .text {
+        opacity: .7;
+        margin-top: 10px;
+      }
+
+      .value,
+      .text {
+        width: 100%;
+        display: inline-block;
+        font-size: 20px;
+        line-height: 24px;
+
+        &.green {
+          color: green;
+        }
+
+        &.red {
+          color: darkred;
+        }
+      }
+    }
+  }
+
+  &.small {
+    .compare-text,
+    .compare-values {
+      display: none;
+    }
+  }
+
+  &.very-small {
+    .compare-text,
+    .compare-values {
+      display: none;
+    }
+  }
+}
