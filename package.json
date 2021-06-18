@@ -24,6 +24,8 @@
     "node": ">=14"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-common-types": "./fontawesome-common-types",
+    "@fortawesome/fontawesome-free": "./fontawesome-free",
     "@fortawesome/fontawesome-svg-core": "./fontawesome-svg-core",
     "@fortawesome/free-solid-svg-icons": "./free-solid-svg-icons",
     "@fortawesome/react-fontawesome": "file:react-fontawesome"
