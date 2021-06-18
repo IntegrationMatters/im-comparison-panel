@@ -1,5 +1,5 @@
-import {DataFrame, DataQueryRequest} from "@grafana/data";
-import {RefId} from "./types/ref-id";
+import { DataFrame, DataQueryRequest } from '@grafana/data';
+import { RefId } from './types/ref-id';
 
 export interface ComparisonTemplateRequest {
   request?: DataQueryRequest;

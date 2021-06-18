@@ -1,10 +1,10 @@
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import React from "react";
-import {ComparisonTemplateRequest} from "./comparison-template-request";
-import {AbsoluteNumbers} from "./helper/absolute-numbers";
-import {Changes} from "./helper/changes";
-import {DataInspector} from "./helper/data-inspector";
-import {Styles} from "./helper/styles";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
+import { ComparisonTemplateRequest } from './comparison-template-request';
+import { AbsoluteNumbers } from './helper/absolute-numbers';
+import { Changes } from './helper/changes';
+import { DataInspector } from './helper/data-inspector';
+import { Styles } from './helper/styles';
 
 export class ComparisonTemplate {
   static getTemplate(request: ComparisonTemplateRequest) {
@@ -27,8 +27,7 @@ export class ComparisonTemplate {
         <div className="header">{request.header}</div>
 
         <div className="main-text">
-          <span className={mainIconClassNames}
-                style={{color: request.color}}>
+          <span className={mainIconClassNames} style={{ color: request.color }}>
             <FontAwesomeIcon icon={mainIcon} />
           </span>
 

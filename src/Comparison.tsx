@@ -1,14 +1,14 @@
-import {PanelProps} from "@grafana/data";
-import React from "react";
-import {ComparisonTemplate} from "./comparison-template";
-import "./Comparison.scss";
-import {Styles} from "./helper/styles";
-import {ComparisonOptions} from "./types/comparison-options";
+import { PanelProps } from '@grafana/data';
+import React from 'react';
+import { ComparisonTemplate } from './comparison-template';
+import './Comparison.scss';
+import { Styles } from './helper/styles';
+import { ComparisonOptions } from './types/comparison-options';
 
-export const Comparison: React.FC<PanelProps<ComparisonOptions>> = ({width, height, data, options}) => {
+export const Comparison: React.FC<PanelProps<ComparisonOptions>> = ({ width, height, data, options }) => {
   const wrapperStyle = {
     width: `${width}px`,
-    height: `${height}px`
+    height: `${height}px`,
   };
 
   const [headerLeft, headerRight] = options.names;
@@ -17,25 +17,24 @@ export const Comparison: React.FC<PanelProps<ComparisonOptions>> = ({width, heig
   const panelLeftTemplate = ComparisonTemplate.getTemplate({
     request: data.request,
     series: data.series,
-    total: "total-filtered",
-    previous: "previous-filtered",
+    total: 'total-filtered',
+    previous: 'previous-filtered',
     header: headerLeft,
-    color: colorLeft
+    color: colorLeft,
   });
   const panelRightTemplate = ComparisonTemplate.getTemplate({
     request: data.request,
     series: data.series,
-    total: "total-right-filtered",
-    previous: "previous-right-filtered",
+    total: 'total-right-filtered',
+    previous: 'previous-right-filtered',
     header: headerRight,
-    color: colorRight
+    color: colorRight,
   });
 
-  const wrapperClassNames = Styles.getWrapperClassNames("im-comparison", height);
+  const wrapperClassNames = Styles.getWrapperClassNames('im-comparison', height);
 
   return (
-    <div style={wrapperStyle}
-         className={wrapperClassNames}>
+    <div style={wrapperStyle} className={wrapperClassNames}>
       <div className="panel-left">{panelLeftTemplate}</div>
       <div className="panel-right">{panelRightTemplate}</div>
     </div>
