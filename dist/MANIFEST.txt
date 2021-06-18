@@ -1,0 +1,37 @@
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+{
+  "manifestVersion": "2.0.0",
+  "signatureType": "private",
+  "signedByOrg": "skowalski",
+  "signedByOrgName": "im",
+  "rootUrls": [
+    "http://localhost/"
+  ],
+  "plugin": "im-comparison-panel",
+  "version": "1.0.0",
+  "time": 1624017208586,
+  "keyId": "7e4d0c6a708866e7",
+  "files": {
+    "assets/images/logo.svg": "09f739b194af41569a911de3831036bd3e293a57c4d4fc5f5d1bf852a49a63bc",
+    "CHANGELOG.md": "65b243d61e410b055ad3984a979fee25df47b24529bc2bcb35b8d95ca3dbd550",
+    "LICENSE": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363",
+    "module.js": "7430a110e4785217f242d6769cdb610a82161c83635884342c74e924df56f512",
+    "module.js.LICENSE.txt": "8b5154d4813e22d9ddf0f301c9febf0fafb97b391e3cc99eaa7c96a4e88a44da",
+    "module.js.map": "30e3a7333223caa4d65c545363d7263050e7cf8dfc4e658cbf96d9ad07cbbbc2",
+    "plugin.json": "1dab064a8c9ceec0bd958b8971c8726c586b8d920b1d77c1735a5694bc36b257",
+    "README.md": "e84a08379acc51d54e8fefb307a093765f316dc61df8055e704b51db0fa88754"
+  }
+}
+-----BEGIN PGP SIGNATURE-----
+Version: OpenPGP.js v4.10.1
+Comment: https://openpgpjs.org
+
+wqEEARMKAAYFAmDMiTgACgkQfk0ManCIZud66wIJAT1k8r6lF/JkSDK0KXUm
+QCZnqHNW5E1/NYSZeo5zR7Zo8k/KgdTU8eR7gIcdxxQrJPtiNvrhlpF5vqqd
+nfFocStOAgdI8RoeRmO7JmV1COP1+h3CkHrUIjrskkhaW9XrGN4b41bPsnaC
+uv457MatVv6dXifvzdUrmsuEAJGyki9JV1nsFw==
+=DAbZ
+-----END PGP SIGNATURE-----
