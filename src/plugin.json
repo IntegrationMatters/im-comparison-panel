@@ -9,7 +9,10 @@
       "name": "Integration Matters",
       "url": "https://www.integrationmatters.com/"
     },
-    "keywords": [],
+    "keywords": [
+      "flows",
+      "comparison"
+    ],
     "logos": {
       "small": "assets/images/logo.svg",
       "large": "assets/images/logo.svg"
