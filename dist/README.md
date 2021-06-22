@@ -1,6 +1,6 @@
 # Comparison Panel
 
-![img.png](comparison-template.png)
+![img.png](https://github.com/IntegrationMatters/im-comparison-panel/blob/master/comparison-template.png?raw=true)
 
 ## Required queries and query names
 
