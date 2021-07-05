@@ -18,7 +18,12 @@
       "large": "assets/images/logo.svg"
     },
     "links": [],
-    "screenshots": [],
+    "screenshots": [
+      {
+        "name": "Comparison overview",
+        "path": "assets/images/comparison-template"
+      }
+    ],
     "version": "%VERSION%",
     "updated": "%TODAY%"
   },
