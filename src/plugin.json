@@ -21,7 +21,7 @@
     "screenshots": [
       {
         "name": "Comparison overview",
-        "path": "assets/images/comparison-template"
+        "path": "assets/images/comparison-template.png"
       }
     ],
     "version": "%VERSION%",
