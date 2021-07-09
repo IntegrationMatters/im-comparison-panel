@@ -1,16 +1,14 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
-import { ComparisonTemplateRequest } from './comparison-template-request';
-import { AbsoluteNumbers } from './helper/absolute-numbers';
-import { Changes } from './helper/changes';
-import { DataInspector } from './helper/data-inspector';
-import { Styles } from './helper/styles';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import React from "react";
+import {ComparisonTemplateRequest} from "./comparison-template-request";
+import {AbsoluteNumbers} from "./helper/absolute-numbers";
+import {Changes} from "./helper/changes";
+import {DataInspector} from "./helper/data-inspector";
+import {Styles} from "./helper/styles";
 
 export class ComparisonTemplate {
   static getTemplate(request: ComparisonTemplateRequest) {
-    const totalTarget = DataInspector.getTarget(request.total, request.request);
-    const totalStatus = DataInspector.getStatus(totalTarget);
-    const trendDirection = DataInspector.getTrendDirection(totalStatus);
+    const trendDirection = DataInspector.getTrendDirection(request.status);
 
     const totalFiltered = AbsoluteNumbers.getTotal(request.series, request.total);
     const previousFiltered = AbsoluteNumbers.getTotal(request.series, request.previous);
@@ -20,7 +18,7 @@ export class ComparisonTemplate {
 
     const changeClassNames = Styles.getChangeValueClassNames(changeOperator, trendDirection);
     const mainIconClassNames = Styles.getMainIconClassNames();
-    const mainIcon = Styles.getMainIcon(totalStatus);
+    const mainIcon = Styles.getMainIcon(request.status);
 
     return (
       <div>

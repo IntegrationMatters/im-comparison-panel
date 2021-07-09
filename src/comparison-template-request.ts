@@ -1,8 +1,8 @@
-import { DataFrame, DataQueryRequest } from '@grafana/data';
-import { RefId } from './types/ref-id';
+import {DataFrame} from "@grafana/data";
+import {RefId} from "./types/ref-id";
 
 export interface ComparisonTemplateRequest {
-  request?: DataQueryRequest;
+  status: string;
   series: DataFrame[];
   total: RefId;
   previous: RefId;

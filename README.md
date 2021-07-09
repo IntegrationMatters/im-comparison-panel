@@ -9,7 +9,7 @@ When the current time range is for example from `now-5m` to `now`, the previous 
 the `${__range}` variable for current and `offset ${__range}` for previous values as seen 
 in the table below.
 
-## Required queries and query names
+## Required query names and queries (queries are exemplary)
 
 Query name | query
 --- | ---
@@ -20,5 +20,3 @@ Query name | query
 
 **The query names are mandatory.**
 
-The filtered status (success, warning, error or timeout) is responsible for the styling of the panel in relation to the
-main icon and the trend color of change.
