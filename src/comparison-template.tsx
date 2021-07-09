@@ -1,10 +1,10 @@
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import React from "react";
-import {ComparisonTemplateRequest} from "./comparison-template-request";
-import {AbsoluteNumbers} from "./helper/absolute-numbers";
-import {Changes} from "./helper/changes";
-import {DataInspector} from "./helper/data-inspector";
-import {Styles} from "./helper/styles";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
+import { ComparisonTemplateRequest } from './comparison-template-request';
+import { AbsoluteNumbers } from './helper/absolute-numbers';
+import { Changes } from './helper/changes';
+import { DataInspector } from './helper/data-inspector';
+import { Styles } from './helper/styles';
 
 export class ComparisonTemplate {
   static getTemplate(request: ComparisonTemplateRequest) {

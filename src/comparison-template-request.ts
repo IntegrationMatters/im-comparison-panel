@@ -1,5 +1,5 @@
-import {DataFrame} from "@grafana/data";
-import {RefId} from "./types/ref-id";
+import { DataFrame } from '@grafana/data';
+import { RefId } from './types/ref-id';
 
 export interface ComparisonTemplateRequest {
   status: string;

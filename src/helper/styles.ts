@@ -1,7 +1,4 @@
 import {
-  faCaretDown,
-  faCaretRight,
-  faCaretUp,
   faCheckCircle,
   faExclamationCircle,
   faQuestionCircle,
@@ -43,24 +40,6 @@ export class Styles {
     return classNames.join(' ');
   }
 
-  static getChartClassNames(operator?: string, trendDirection: TrendDirection = 'positive') {
-    const classNames: string[] = ['chart'];
-
-    if (operator) {
-      classNames.push(...this.addChangeOperatorClass(operator, trendDirection));
-    }
-
-    return classNames.join(' ');
-  }
-
-  static getTrendClassNames(operator: string, trendDirection: TrendDirection = 'positive') {
-    const classNames: string[] = ['trend'];
-
-    classNames.push(...this.addChangeOperatorClass(operator, trendDirection));
-
-    return classNames.join(' ');
-  }
-
   static getMainIconClassNames(status?: string) {
     const classNames: string[] = ['icon'];
 
@@ -69,16 +48,6 @@ export class Styles {
     }
 
     return classNames.join(' ');
-  }
-
-  static getTrendIcon(changeOperator: string) {
-    if (changeOperator === '+') {
-      return faCaretUp;
-    } else if (changeOperator === '-') {
-      return faCaretDown;
-    }
-
-    return faCaretRight;
   }
 
   static getMainIcon(status?: string) {

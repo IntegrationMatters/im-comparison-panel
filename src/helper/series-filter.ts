@@ -11,8 +11,4 @@ export class SeriesFilter {
       return field.type === type;
     });
   }
-
-  static isSeriesVisible(dataFrames: DataFrame[], refId: RefId) {
-    return !!dataFrames.find((series) => this.filterByRefId(series, refId));
-  }
 }
