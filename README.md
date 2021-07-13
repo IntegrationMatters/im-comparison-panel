@@ -1,6 +1,6 @@
 # Comparison Panel
 
-![img.png](https://github.com/IntegrationMatters/im-comparison-panel/blob/master/comparison-template.png?raw=true)
+![img.png](https://github.com/IntegrationMatters/integrationmatters-comparison-panel/blob/master/comparison-template.png?raw=true)
 
 The Comparison panel is meant to display the difference of a current set of values and 
 the set of values right before, with the same time range. \
